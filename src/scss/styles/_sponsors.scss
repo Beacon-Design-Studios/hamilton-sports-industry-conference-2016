@@ -1,0 +1,26 @@
+// Sponsors
+.event-sponsor-list {
+  list-style: none;
+  margin: 0;
+  padding: 2em 0;
+  li {
+    display: inline-block;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+.sponsor {
+  height: 200px;
+  width: 200px;
+  display: block;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  @include breakpoint(l) {
+    margin-bottom: 0;
+  }
+}
+.sponsor-mac {
+  background-image: url(../img/maclogofull.jpg);
+}

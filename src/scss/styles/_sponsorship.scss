@@ -1,0 +1,10 @@
+.card {
+    background-color: white;
+    padding: 40px 20px;
+    flex: 1 0 auto;
+    width: 20%;
+    margin: 10px;
+    @include breakpoint(s) {
+        width: 100%;
+    }
+}

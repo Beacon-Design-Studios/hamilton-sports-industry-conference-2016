@@ -1,0 +1,51 @@
+// Branding
+.logo {
+    font-size: 3.7em;
+    line-height: 1.5;
+    padding: 30px;
+    color: $primary-color;
+    font-weight: 800;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    & > svg {
+        display: inline-block;
+        max-width: 100%;
+    }
+    &.active {
+        .fill {
+            fill: white;
+            transition: all .5s;
+        }
+    }
+}
+
+// Banner
+.banner {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.8) 100%), url(../img/dbac.jpg) center center no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.banner-heading {
+    @extend .h-white;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: .7em 0;
+    + p {
+        font-weight: 900;
+    }
+}
+
+.banner-buttons {
+    margin-top: 40px;
+    .button {
+        color: white;
+        display: block;
+        margin-top: 10px;
+        @include breakpoint(m) {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    }
+}
